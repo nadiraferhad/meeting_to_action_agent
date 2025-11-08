@@ -1,5 +1,7 @@
 fastapi
 uvicorn
-pydantic
+pillow
+pytesseract
+python-docx
 dateparser
-ics
+git add backend/requirements.txt
