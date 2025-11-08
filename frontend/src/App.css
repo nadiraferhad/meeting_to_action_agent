@@ -1,0 +1,99 @@
+body {
+  background: #1c1c2e;
+  font-family: "Poppins", sans-serif;
+}
+
+.chat-container {
+  width: 500px;
+  max-width: 90%;
+  margin: 30px auto;
+  background: #2a2a3d;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+button {
+  background: #00bfff;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background: #0094d4;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.chatbox {
+  height: 300px;
+  overflow-y: auto;
+  background: #1f1f33;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg {
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.msg.user {
+  background: #00bfff;
+  margin-left: auto;
+  text-align: right;
+}
+
+.msg.bot, .msg.system {
+  background: #3b3b5a;
+  text-align: left;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
